@@ -1,0 +1,16 @@
+{
+  "vnfInfoUrl": "http://127.0.0.1:8085/Snh_ItfReq",
+  "operationTimeout": 300000,
+  "region": "RegionOne",
+  "hostname": "compute1",
+  "fwConfigPollInerwal": 5,
+  "accessIpCacheRefreshPeriod": 30000,
+  "rabbitOpenStackConfig": {
+    "host": "127.0.0.1",
+    "port": 5672,
+    "username": "guest",
+    "password": "guest",
+    "novaQueuePrefix": "noob",
+    "novaTopic": "notification_nova"
+  }
+}

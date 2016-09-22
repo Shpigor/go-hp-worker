@@ -1,10 +1,15 @@
 package main
 
 import (
-        "fmt"
-        "github.com/michaelklishin/rabbit-hole"
+        "log"
+        "os"
+        "./config"
 )
 
 func main() {
-        fmt.Println("")
+        if len(os.Args) < 2 {
+                log.Fatalln("incorrent parameters")
+        }
+        log.Println("Start worker...")
+        config.Load(os.Args[1])
 }
